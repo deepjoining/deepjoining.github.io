@@ -1,23 +1,61 @@
-# 딥러닝 자료실
+# [Start Bootstrap - Scrolling Nav](https://startbootstrap.com/template/scrolling-nav/)
 
-## 강의자료 다운로드
+[Scrolling Nav](https://startbootstrap.com/template/scrolling-nav/) is an unstyled one page starter template with a collapsing, smooth scrolling navigation bar for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/).
 
-1. MATLAB을 이용한 고강도강 겹치기 레이저 용접부의 모델링 (회귀/분류모델) (2021/01/26)
+## Preview
 
-    [동영상]<https://youtu.be/o9aVjBHEEbU>
-  
-    [데이터소스파일](lec/lec1/all_data.xlsx)
-  
-    [강의자료](lec/lec1/slide1.pdf)
-  
-    [예제논문파일](lec/lec1/paper1.pdf) 
-    
+[![Scrolling Nav Preview](https://assets.startbootstrap.com/img/screenshots/templates/scrolling-nav.png)](https://startbootstrap.github.io/startbootstrap-scrolling-nav/)
 
+**[View Live Preview](https://startbootstrap.github.io/startbootstrap-scrolling-nav/)**
 
+## Status
 
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/StartBootstrap/startbootstrap-scrolling-nav/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/startbootstrap-scrolling-nav.svg)](https://www.npmjs.com/package/startbootstrap-scrolling-nav)
+[![Build Status](https://travis-ci.org/StartBootstrap/startbootstrap-scrolling-nav.svg?branch=master)](https://travis-ci.org/StartBootstrap/startbootstrap-scrolling-nav)
+[![dependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-scrolling-nav/status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-scrolling-nav)
+[![devDependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-scrolling-nav/dev-status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-scrolling-nav?type=dev)
 
-    
-    
-    
+## Download and Installation
 
-## 예제 파일은 아래에서도 다운로드 가능합니다. (2021/01/20)
+To begin using this template, choose one of the following options to get started:
+
+* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template/scrolling-nav/)
+* Install via npm: `npm i startbootstrap-scrolling-nav`
+* Clone the repo: `git clone https://github.com/StartBootstrap/startbootstrap-scrolling-nav.git`
+* [Fork, Clone, or Download on GitHub](https://github.com/StartBootstrap/startbootstrap-scrolling-nav)
+
+## Usage
+
+### Basic Usage
+
+After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+
+### Advanced Usage
+
+After installation, run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
+
+You must have npm and Gulp installed globally on your machine in order to use these features.
+
+## Bugs and Issues
+
+Have a bug or an issue with this template? [Open a new issue](https://github.com/StartBootstrap/startbootstrap-scrolling-nav/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](https://startbootstrap.com/template/scrolling-nav/).
+
+## About
+
+Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
+
+* <https://startbootstrap.com>
+* <https://twitter.com/SBootstrap>
+
+Start Bootstrap was created by and is maintained by **[David Miller](https://davidmiller.io/)**.
+
+* <https://davidmiller.io>
+* <https://twitter.com/davidmillerhere>
+* <https://github.com/davidtmiller>
+
+Start Bootstrap is based on the [Bootstrap](https://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+
+## Copyright and License
+
+Copyright 2013-2020 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-scrolling-nav/blob/gh-pages/LICENSE) license.
