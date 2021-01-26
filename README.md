@@ -6,11 +6,11 @@
 
     [동영상]<https://youtu.be/o9aVjBHEEbU>
   
-    [데이터소스파일](/lec1/all_data.xlsx)
+    [데이터소스파일](github.com/deepjoinin/lec/lec1/all_data.xlsx)
   
-    [강의자료](/lec1/slide1.pdf)
+    [강의자료](github.com/deepjoinin/lec//lec1/slide1.pdf)
   
-    [예제논문파일](/lec1/paper1.pdf) 
+    [예제논문파일](github.com/deepjoinin/lec/lec1/paper1.pdf) 
     
 
 
