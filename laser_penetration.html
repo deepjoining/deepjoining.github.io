@@ -4,20 +4,24 @@
   }
 </Style>
 
-<h1 style="margin-top:5%;">레이저 용입깊이 예측</h1>
-
-<h1>레이저 출력 <input type="text" id="value1ID" style="font-size:50%; text-align:center;"  placeholder="value 1"> kW</h1>
-<h1>용접 속도 <input type="text" id="value2ID" style="font-size:50%; text-align:center;"  placeholder="value 2"> m.min</h1>
-<h1>초점위치 <input type="text" id="value3ID" style="font-size:50%; text-align:center;"  placeholder="value 3"></h1>
+<h1 style="margin-top:5%;">레이저용접 용입깊이 예측</h1>
 <br>
 
-<input style="background-color:white; border:2px solid black;" type='button' onclick='myFunction()' value='calculate';"/> 
+<h2>레이저 출력 <input type="text" id="value1ID" style="font-size:100%; text-align:center;"  placeholder="2 to 8"> kW</h1>
+<h2>용접 속도 <input type="text" id="value2ID" style="font-size:100%; text-align:center;"  placeholder="1 to 7"> m/min</h1>
+<h2>초점위치 <input type="text" id="value3ID" style="font-size:100%; text-align:center;"  placeholder="-5 to 5"> mm</h1>
+<br>
+
+<input style="background-color:white; font-size:150%; border:2px solid black;" type='button' onclick='myFunction()' value='calculate';"/> 
+<br>
+<br>
 <br>
 
 <h1 id="print1">Estimated penetration depth by 고범수 모델 </h1>
-<h1 id="print2">answer</h1>
 
-<h1><a href="https://deepjoining.github.io/">돌아가기</a></h1>
+
+<br>
+<h1><a href="https://deepjoining.github.io/">메인 홈페이지로 돌아가기</a></h1>
 
 <script>
   function myFunction() {
@@ -27,8 +31,7 @@
     var z = document.getElementById("value3ID").value;
 
     var depth = x*y*z;
-    document.getElementById("print1").innerHTML = "Estimated penetration depth: ";
-    document.getElementById("print2").innerHTML = depth + "mm";
+    document.getElementById("print1").innerHTML = depth + "mm";
     
   }
 </script>
