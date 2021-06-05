@@ -14,8 +14,8 @@
 <input style="background-color:white; border:2px solid black;" type='button' onclick='myFunction()' value='calculate';"/> 
 <br>
 
-<h1 id="print1">fomula:</h1>
-<h1 id="print2">answer:</h1>
+<h1 id="print1">Estimated penetration depth by 고범수 모델 </h1>
+<h1 id="print2">answer</h1>
 
 
 
@@ -26,8 +26,9 @@
     var y = document.getElementById("value2ID").value;
     var z = document.getElementById("value3ID").value;
 
-    document.getElementById("print1").innerHTML = "fomula: "+x+" x "+y+" x "+z;
-    document.getElementById("print2").innerHTML = "answer: "+x*y*z;
+    var depth = x*y*z;
+    document.getElementById("print1").innerHTML = "Estimated penetration depth: ";
+    document.getElementById("print2").innerHTML = depth;
     
   }
 </script>
