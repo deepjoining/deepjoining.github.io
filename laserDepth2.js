@@ -47,7 +47,7 @@
             x: {
               title: {
                 display: true,
-                text: 'Laser Power (kW)',
+                text: 'Welding speed (m/min)',
                 font: {family: 'Times', size: 25, weight: 'bold', lineHeight: 1.2},
                 padding: {top: 20, left: 0, right: 0, bottom: 0}
               },
