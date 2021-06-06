@@ -1,5 +1,3 @@
-<script>
-
   function myFunction() {
 
     var x = document.getElementById("value1ID").value;
@@ -138,4 +136,3 @@
     return ((0.67111141834628707 + a) - -1.0) / 0.132931762032067 +
       0.192691104407987;
   }
-</script>
