@@ -1,11 +1,11 @@
   function myFunction2() {
 
-    var x = document.getElementById("value1ID").value;
+    var x = document.getElementById("power2ID").value;
     var y;    
-    var z = document.getElementById("value3ID").value;
+    var z = document.getElementById("diameter2ID").value;
     
     var depth = [];
-    var x_tick = [];
+    var x_tickValue = [];
 
     var stringX = "" + x;
     var stringZ = "" + z;
@@ -14,7 +14,7 @@
 
     for (k = 1; k <= 17; k++) {
       y = (k-1)/2+2; 
-      x_tick[k]=y;
+      x_tickValue[k]=y;
       depth[k]=myNeuralNetworkFunction2(x,y,z); 
     }
 
@@ -24,7 +24,7 @@
         type: 'line',
         // The data for our dataset
         data: {
-            labels: x_tick,
+            labels: x_tickValue,
             datasets: [{
                 label: "Penetration depth",
                 backgroundColor: 'rgb(255, 99, 132)',
@@ -47,7 +47,7 @@
             x: {
               title: {
                 display: true,
-                text: 'Welding speed (m/min)',
+                text: 'Laser Power (kW)',
                 font: {family: 'Times', size: 25, weight: 'bold', lineHeight: 1.2},
                 padding: {top: 20, left: 0, right: 0, bottom: 0}
               },
@@ -120,7 +120,7 @@
     /*  Map Minimum and Maximum Input Processing Function */
     xp1_idx_0 = (x1 - 0.3) * 0.121951219512195 + -1.0;
     xp1_idx_1 = (x2 - 0.27930174563591) * 0.101287455393338 + -1.0;
-    xp1_idx_2 = (x3 - 0.05) * 2.73972602739726 + -1.0;
+    xp1_idx_2 = (x3/1000. - 0.05) * 2.73972602739726 + -1.0;
 
     /*  Layer 1 */
     /*  Sigmoid Symmetric Transfer Function */
