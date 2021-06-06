@@ -15,7 +15,7 @@
     for (k = 1; k <= 17; k++) {
       y = (k-1)/2+2; 
       x_tick[k]=y;
-      depth[k]=myNeuralNetworkFunction(x,y,z); 
+      depth[k]=myNeuralNetworkFunction2(x,y,z); 
     }
 
     var ctx = document.getElementById('myChart').getContext('2d');
