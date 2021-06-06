@@ -8,8 +8,8 @@
 <br>
 
 <h2>레이저 출력 <input type="text" id="value1ID" style="font-size:100%; text-align:center;"  placeholder="2 to 8"> kW</h1>
-<h2>용접 속도 <input type="text" id="value2ID" style="font-size:100%; text-align:center;"  placeholder="1 to 7"> m/min</h1>
-<h2>초점위치 <input type="text" id="value3ID" style="font-size:100%; text-align:center;"  placeholder="-5 to 5"> mm</h1>
+<h2>용접 속도 <input type="text" id="value2ID" style="font-size:100%; text-align:center;"  placeholder="0.3 to 10"> m/min</h1>
+<h2>빔 직경 <input type="text" id="value3ID" style="font-size:100%; text-align:center;"  placeholder="50 to 780"> um</h1>
 <br>
 
 <input style="background-color:white; font-size:150%; border:2px solid black;" type='button' onclick='myFunction()' value='calculate';"/> 
@@ -86,7 +86,7 @@
   /*  Map Minimum and Maximum Input Processing Function */
   xp1_idx_0 = (x1 - 0.3) * 0.121951219512195 + -1.0;
   xp1_idx_1 = (x2 - 0.27930174563591) * 0.101287455393338 + -1.0;
-  xp1_idx_2 = (x3 - 0.05) * 2.73972602739726 + -1.0;
+  xp1_idx_2 = (x3/1000. - 0.05) * 2.73972602739726 + -1.0;
 
   /*  Layer 1 */
   /*  Sigmoid Symmetric Transfer Function */
