@@ -1,7 +1,7 @@
  function myFunction() {
 
     var x = document.getElementById("value1ID").value;
-    var y = document.getElementById("value2ID").value/1000;
+    var y = document.getElementById("value2ID").value;
     var z = document.getElementById("value3ID").value;
 
     var depth = myNeuralNetworkFunction(x,y,z);
