@@ -1,15 +1,15 @@
- function myFunction() {
+  function myFunction1() {
 
-    var x = document.getElementById("value1ID").value;
-    var y = document.getElementById("value2ID").value;
-    var z = document.getElementById("value3ID").value;
+    var x = document.getElementById("power1ID").value;
+    var y = document.getElementById("speed1ID").value;
+    var z = document.getElementById("diameter1ID").value;
 
-    var depth = myNeuralNetworkFunction(x,y,z);
+    var depth = myNeuralNetworkFunction1(x,y,z);
     document.getElementById("print1").innerHTML = "Estimated Depth is " + depth.toFixed(2) + " mm";
     
   }
 
-  function myNeuralNetworkFunction(x1,x2,x3)
+  function myNeuralNetworkFunction1(x1,x2,x3)
 {
   var xp1_idx_0;
   var xp1_idx_1;
