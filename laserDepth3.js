@@ -1,11 +1,11 @@
-function myFunction3() {
+  function myFunction3() {
 
   var size = 100, x = new Array(size), y = new Array(size), z = new Array(size), i, j;
-  var power = document.getElementById("value1ID").value;
+  var power = document.getElementById("power3ID").value;
 
   for(var i = 0; i < size; i++) {
-	x[i] = 1. + 6*i/size;
-        y[i] = 0.1 + 0.6*i/size;
+	  x[i] = 1. + 6*i/size;
+    y[i] = 0.1 + 0.6*i/size;
   	z[i] = new Array(size);
   }
 
