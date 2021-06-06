@@ -1,26 +1,119 @@
-<Style>
-  body {
-    text-align:center;
-  }
-</Style>
+<!DOCTYPE html>
+<html lang="en">
 
-<h1 style="margin-top:5%;">레이저용접 용입깊이 예측</h1>
-<br>
+<head>
 
-<h2>레이저 출력 <input type="text" id="value1ID" style="font-size:100%; text-align:center;"  placeholder="0.3 to 16.7"> kW</h1>
-<h2>용접 속도 <input type="text" id="value2ID" style="font-size:100%; text-align:center;"  placeholder="0.3 to 10"> m/min</h1>
-<h2>빔 직경 <input type="text" id="value3ID" style="font-size:100%; text-align:center;"  placeholder="50 to 780"> um</h1>
-<br>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-<input style="background-color:white; font-size:150%; border:2px solid black;" type='button' onclick='myFunction()' value='calculate';"/> 
-<br>
-<br>
-<br>
+  <title>AI in Welding</title>
 
-<h1 id="print1">Estimated penetration depth by 고범수 SNN 모델 </h1>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
 
-<br>
-<h1><a href="https://deepjoining.github.io/">메인 홈페이지로 돌아가기</a></h1>
+</head>
 
-<script src="laserDepth.js"></script>
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">AI in Welding</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#lepth1">Laser welding depth </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white">
+    <div class="container text-center">
+      <h1>개발한 모델로 예측하기</h1>
+      <p class="lead">실제 연구에 AI를 적용해 봅시다</p>
+    </div>
+  </header>
+  
+  <section id="depth1">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h1 style="margin-top:5%;">레이저용접 용입깊이 예측</h1>
+          <br>
+
+          <h2>레이저 출력 <input type="text" id="value1ID" style="font-size:100%; text-align:center;"  placeholder="0.3 to 16.7"> kW</h1>
+          <h2>용접 속도 <input type="text" id="value2ID" style="font-size:100%; text-align:center;"  placeholder="0.3 to 10"> m/min</h1>
+          <h2>빔 직경 <input type="text" id="value3ID" style="font-size:100%; text-align:center;"  placeholder="50 to 780"> um</h1>
+          <br>
+
+          <input style="background-color:white; font-size:150%; border:2px solid black;" type='button' onclick='myFunction()' value='calculate';"/> 
+          <br>
+          <br>
+          <br>
+
+          <h1 id="print1">Estimated penetration depth by 고범수 SNN 모델 </h1>
+
+          <br>
+          <h1><a href="https://deepjoining.github.io/">메인 홈페이지로 돌아가기</a></h1>
+
+          <script src="laserDepth.js"></script>
+      </div>
+    </div>
+    </br>
+    </br>
+  </section>
+
+  <section id="contact" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h2>Contact us</h2>
+          <br>
+          <p class="lead"> 질문이나 의견은 deepjoining@gmail.com으로 보내주세요.</p>
+          <br>
+          
+        <h4>Notice </h4>
+          <li>이 홈페이지는 한국생산기술연구원 대학원생 교육자료입니다. 목적 외 사용을 금지합니다.</li>
+          <li>오프라인 강좌에 참여해 피드백을 준 생기원, 부산대, 조선대, PSU 대학원생들께 감사드립니다.</li>
+          <li>이 홈페이지의 예제는 교재로 사용하였던 "케라스 창시자에게 배우는 딥러닝, 길벗"의 예제를 수정하여 만들었습니다.</li>
+          <li>이 홈페이지 양식은 https://startbootstrap.com/template/scrolling-nav에서 다운로드 받아 만들었습니다.</li>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; DeepJoining Team, KITECH-PSU Co-LAB 2021</p>
+      <p class="m-0 text-center text-white">made by Hyeon Jeong You, Kidong Lee, Shinho Kim, and Cheolhee Kim</p>      
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
