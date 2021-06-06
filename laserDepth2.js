@@ -7,10 +7,10 @@
     var depth = [];
     var x_tickValue = [];
 
-    var stringX = "" + x;
-    var stringZ = "" + z;
+    var stringX = '' + x;
+    var stringZ = '' + z;
 
-    var gTitle = "Laser power: "+ stringX + " kW and Beam diameter: "+ stringZ + " mm";
+    var gTitle = 'Laser power: '+ stringX + 'kW and Beam diameter: '+ stringZ + ' mm';
 
     for (k = 1; k <= 17; k++) {
       y = (k-1)/2+2; 
@@ -26,7 +26,7 @@
         data: {
             labels: x_tickValue,
             datasets: [{
-                label: "Penetration depth",
+                label: 'Penetration depth',
                 backgroundColor: 'rgb(255, 99, 132)',
                 fill:false, // line의 아래쪽을 색칠할 것인가? 
                 borderColor: 'rgb(255, 99, 132)',
