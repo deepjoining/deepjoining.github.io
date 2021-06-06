@@ -2,7 +2,7 @@
 
     var x = document.getElementById("value1ID").value;
     var y;    
-    var z = document.getElementById("value3ID").value/1000.;
+    var z = document.getElementById("value3ID").value;
     
     var depth = [];
     var x_tick = [];
@@ -10,7 +10,7 @@
     var stringX = "" + x;
     var stringZ = "" + z;
 
-    var gTitle = "Laser power: "+ stringX + " kW and Beam diameter: "+ stringZ + " um";
+    var gTitle = "Laser power: "+ stringX + " kW and Beam diameter: "+ stringZ + " mm";
 
     for (k = 1; k <= 17; k++) {
       y = (k-1)/2+2; 
@@ -120,7 +120,7 @@
     /*  Map Minimum and Maximum Input Processing Function */
     xp1_idx_0 = (x1 - 0.3) * 0.121951219512195 + -1.0;
     xp1_idx_1 = (x2 - 0.27930174563591) * 0.101287455393338 + -1.0;
-    xp1_idx_2 = (x3. - 0.05) * 2.73972602739726 + -1.0;
+    xp1_idx_2 = (x3 - 0.05) * 2.73972602739726 + -1.0;
 
     /*  Layer 1 */
     /*  Sigmoid Symmetric Transfer Function */
