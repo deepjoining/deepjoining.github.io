@@ -23,15 +23,22 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Penetration Estimation</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">AI in Welding</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#depth1">Laser welding depth </a>
+            <a class="nav-link js-scroll-trigger" href="#point">Point</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#velocity">Velocity</a>
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contour">Contour</a>
+          </li>          
+
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
           </li>
@@ -44,16 +51,16 @@
     <div class="container text-center">
       <h1>이제 개발한 모델을 이용해 봅시다</h1>
       <br>
-      <br>      
+      <br>
       <p class="lead">대출력 레이저용접 용입깊이 예측모델 by 고범수</p>
     </div>
   </header>
   
-  <section id="depth1">
+  <section id="point">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 mx-auto">
-          <h2 style="margin-top:5%;">레이저용접 용입깊이 예측</h1>
+          <h2 style="margin-top:5%;">조건으로 예측하기</h1>
           <br>
 
           <h3>레이저 출력 <input type="text" id="value1ID" style="font-size:100%; text-align:center;"  placeholder="0.3 to 16.7"> kW</h1>
@@ -72,6 +79,59 @@
           <h3><a href="https://deepjoining.github.io/">메인 홈페이지로 돌아가기</a></h1>
 
           <script src="laserDepth.js"></script>
+      </div>
+    </div>
+  </section>
+
+  <section id="Velocity" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h2 style="margin-top:5%;">속도에 따른 용입 예측하기</h1>
+          <br>
+
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+          <h3>레이저 출력 <input type="text" id="value1ID" style="font-size:100%; text-align:center;"  placeholder="0.3 to 16.7"> kW</h1>
+          <h3>빔 직경 <input type="text" id="value3ID" style="font-size:100%; text-align:center;"  placeholder="50 to 780"> um</h1>
+          <br>
+
+          <input style="background-color:white; font-size:150%; border:2px solid black;" type='button' onclick='myFunction()' value='calculate';"/> 
+          <br>
+
+          <div>
+              <canvas id="myChart" width=600 height=600>
+              </canvas>
+          </div>
+
+          <h3><a href="https://deepjoining.github.io/">메인 홈페이지로 돌아가기</a></h1>
+          <script src="laserDepth2.js"></script>
+      </div>
+    </div>
+  </section>
+
+    <section id="Contour">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h2 style="margin-top:5%;">출력에 따른 용입 등고선 예측하기 (작업 중) </h1>
+          <br>
+
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+          <h3>레이저 출력 <input type="text" id="value1ID" style="font-size:100%; text-align:center;"  placeholder="0.3 to 16.7"> kW</h1>
+          <br>
+
+          <input style="background-color:white; font-size:150%; border:2px solid black;" type='button' onclick='myFunction()' value='calculate';"/> 
+          <br>
+
+          <div>
+              <canvas id="myChart" width=600 height=600>
+              </canvas>
+          </div>
+
+          <h3><a href="https://deepjoining.github.io/">메인 홈페이지로 돌아가기</a></h1>
+          <script src="laserDepth2.js"></script>
       </div>
     </div>
     </br>
