@@ -4,8 +4,8 @@ function myFunction3() {
   var power = document.getElementById("value1ID").value;
 
   for(var i = 0; i < size; i++) {
-	  x[i] = 1. + 6*i/size;
-    y[i] = 0.1 + 0.6*i/size;
+	x[i] = 1. + 6*i/size;
+        y[i] = 0.1 + 0.6*i/size;
   	z[i] = new Array(size);
   }
 
