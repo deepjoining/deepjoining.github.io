@@ -1,4 +1,4 @@
-  function myFunction() {
+  function myFunction2() {
 
     var x = document.getElementById("value1ID").value;
     var y;    
@@ -69,7 +69,7 @@
     var chart = new Chart(ctx, data);
   }  
 
- function myNeuralNetworkFunction(x1,x2,x3)
+ function myNeuralNetworkFunction2(x1,x2,x3)
   {
     var xp1_idx_0;
     var xp1_idx_1;
