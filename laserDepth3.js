@@ -3,9 +3,11 @@
   var size = 100, x = new Array(size), y = new Array(size), z = new Array(size), i, j;
   var power = document.getElementById("power3ID").value;
 
+  var stringPower = '' + power;
+  
   for(var i = 0; i < size; i++) {
-	  x[i] = 1. + 6*i/size;
-    y[i] = 0.1 + 0.6*i/size;
+	  x[i] = 1. + 6.1*i/size;
+    y[i] = 0.1 + 0.61*i/size;
   	z[i] = new Array(size);
   }
 
@@ -15,15 +17,26 @@
  	  }
   }
 
+  var  layout = {                     // all "layout" attributes: #layout
+        title: 'Laser power: '+ stringPower+ ' kW',  // more about "layout.title": #layout-title
+        xaxis: {                  // all "layout.xaxis" attributes: #layout-xaxis
+            title: 'Welding speed (m/min)'         // more about "layout.xaxis.title": #layout-xaxis-title
+        },
+        yaxis: {                  // all "layout.xaxis" attributes: #layout-xaxis
+            title: 'Beam diamter (mm)'         // more about "layout.xaxis.title": #layout-xaxis-title
+        },
+
+  }
   var data = [ {
 	  	z: z,
 	  	x: x,
 	  	y: y,
-	  	type: 'contour'
+	  	type: 'contour',
+      colorbar: {title: {text: 'depth in mm'}},
 	  }
   ];
 
-Plotly.newPlot('myDiv', data);
+Plotly.newPlot('myDiv', data, layout);
 }
 
  function myNeuralNetworkFunction3(x1,x2,x3)
