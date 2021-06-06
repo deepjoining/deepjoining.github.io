@@ -63,11 +63,11 @@
           <h2 style="margin-top:5%;">조건으로 예측하기</h1>
           <br>
 
-          <h3>레이저 출력 <input type="text" id="value1ID" style="font-size:100%; text-align:center;"  placeholder="0.3 to 16.7"> kW</h1>
-          <h3>용접 속도 <input type="text" id="value2ID" style="font-size:100%; text-align:center;"  placeholder="0.3 to 10"> m/min</h1>
-          <h3>빔 직경 <input type="text" id="value3ID" style="font-size:100%; text-align:center;"  placeholder="0.05 to 0.78"> mm</h1>
+          <h3>레이저 출력 <input type="text" id="power1ID" style="font-size:100%; text-align:center;"  placeholder="0.3 to 16.7"> kW</h1>
+          <h3>용접 속도 <input type="text" id="speed1ID" style="font-size:100%; text-align:center;"  placeholder="0.3 to 10"> m/min</h1>
+          <h3>빔 직경 <input type="text" id="diameter1ID" style="font-size:100%; text-align:center;"  placeholder="0.05 to 0.78"> mm</h1>
           <br>
-          <input style="background-color:white; font-size:150%; border:2px solid black;" type='button' onclick='myFunction()' value='calculate';"/> 
+          <input style="background-color:white; font-size:150%; border:2px solid black;" type='button' onclick='myFunction1()' value='calculate';"/> 
           <br>
           <br>
           <br>
@@ -75,7 +75,7 @@
           <br>
           <h3><a href="https://deepjoining.github.io/">메인 홈페이지로 돌아가기</a></h1>
 
-          <script src="laserDepth.js"></script>
+          <script src="laserDepth1.js"></script>
       </div>
     </div>
   </section>
@@ -89,8 +89,8 @@
 
           <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-          <h3>레이저 출력 <input type="text" id="value1ID" style="font-size:100%; text-align:center;"  placeholder="0.3 to 16.7"> kW</h1>
-          <h3>빔 직경 <input type="text" id="value3ID" style="font-size:100%; text-align:center;"  placeholder="0.050 to 0.78"> mm</h1>
+          <h3>레이저 출력 <input type="text" id="power2ID" style="font-size:100%; text-align:center;"  placeholder="0.3 to 16.7"> kW</h1>
+          <h3>빔 직경 <input type="text" id="diameter2ID" style="font-size:100%; text-align:center;"  placeholder="0.05 to 078"> mm</h1>
           <br>
 
           <input style="background-color:white; font-size:150%; border:2px solid black;" type='button' onclick='myFunction2()' value='calculate';"/> 
@@ -111,12 +111,12 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 mx-auto">
-                    <h2 style="margin-top:5%;">속도에 따른 용입 예측하기</h1>
+                    <h2 style="margin-top:5%;">출력별 공정도</h1>
           <br>
 
           <script src="https://cdn.plot.ly/plotly-2.0.0-rc.3.min.js"></script>
 
-          <h3>레이저 출력 <input type="text" id="value1ID" style="font-size:100%; text-align:center;"  placeholder="0.3 to 16.7"> kW</h1>
+          <h3>레이저 출력 <input type="text" id="power3ID" style="font-size:100%; text-align:center;"  placeholder="0.3 to 16.7"> kW</h1>
           <br>
 
           <input style="background-color:white; font-size:150%; border:2px solid black;" type='button' onclick='myFunction3()' value='calculate';"/> 
